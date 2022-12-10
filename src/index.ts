@@ -19,7 +19,7 @@ const handle = (ctx: PicGo): void => {
     const item = items.find(v => v.type === uploaderKey)
     ctx.emit('notification', {
       title: 'OSS外链',
-      body: `不支持OSS ${uploaderKey}=${item?.name}`,
+      body: `不支持OSS ${uploaderKey}=${item?.name}，跳过外链处理`,
       text: ''
     })
     return
