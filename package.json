@@ -1,12 +1,12 @@
 {
   "name": "picgo-plugin-oss-outside-url",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "将OSS的私有资源链接转成外链的PicGo插件，支持阿里云OSS、腾讯云COS、七牛云Kodo\n注意：该插件没有充分测试网址后缀的场景，设置了网址后缀可能会导致非预期的结果发生",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "",
+  "homepage": "https://github.com/caohongliang92/picgo-plugin-oss-outside-url#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p .",
