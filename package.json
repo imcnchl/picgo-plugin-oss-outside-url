@@ -1,0 +1,46 @@
+{
+  "name": "picgo-plugin-oss-outside-url",
+  "version": "1.0.2",
+  "description": "将OSS的私有资源链接转成外链的PicGo插件，支持阿里云OSS、腾讯云COS、七牛云Kodo\n注意：该插件没有充分测试网址后缀的场景，设置了网址后缀可能会导致非预期的结果发生",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "dev": "tsc -w -p .",
+    "patch": "npm version patch && git push origin master && git push origin --tags",
+    "minor": "npm version minor && git push origin master && git push origin --tags",
+    "major": "npm version major && git push origin master && git push origin --tags"
+  },
+  "keywords": [
+    "picgo",
+    "picgo-gui-plugin",
+    "picgo-plugin"
+  ],
+  "author": "caohongliang",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "16.9.1",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "picgo": "^1.5.0-alpha.13",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "ali-oss": "^6.17.1",
+    "cos-nodejs-sdk-v5": "^2.11.18",
+    "qiniu": "^7.8.0",
+    "upyun": "^3.4.6"
+  }
+}
